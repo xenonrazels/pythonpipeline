@@ -9,7 +9,7 @@ jobs:
       - run: python hello.py
   build:
     needs: [test]
-    runs-on: ubutnu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/upload-artifact@v2
