@@ -3,11 +3,10 @@ name: python pipeline
 on: push
 jobs:
   test:
-    runs-on: ubunut-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: action/checkout@v2
       - run: python hello.py
-
   build:
     needs: [test]
     runs-on: ubutnu-latest
